@@ -1,0 +1,2 @@
+This book with detailed explanantion will take you a step closer to the complete Haskell Mastery and has been very well written.
+The flow of this book has been constant and stable so as to facilitate the Haskellers to breeze through this book.
