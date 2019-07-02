@@ -1,3 +1,4 @@
+module Main where
 -- | Eureka!
 -- lift to top-level
 -- >>> :sprint xs
@@ -37,3 +38,6 @@ fib_mem' = (map (\n -> if n <= 1 then 1 else fib_mem' (n-2) + fib_mem' (n-1)) [0
 
 fib_mem_arg :: Int -> Integer
 fib_mem_arg = \i -> map (\n -> if n <= 1 then 1 else fib_mem_arg (n-2) + fib_mem_arg (n-1)) [0..] !! i
+
+main :: IO ()
+main = print $ fib_mem' 1000
