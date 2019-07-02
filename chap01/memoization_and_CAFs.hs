@@ -29,3 +29,17 @@ fib :: Int -> Integer
 fib 0 = 1
 fib 1 = 1
 fib n = fib_mem (n-2) + fib_mem (n-1)
+
+
+------------------
+
+fib_mem_arg :: Int -> Integer
+fib_mem_arg n = xs_arg !! n
+  where
+    xs_arg :: [Integer]
+    xs_arg = map fib_arg [0..]
+
+    fib_arg :: Int -> Integer
+    fib_arg 0 = 1
+    fib_arg 1 = 1
+    fib_arg n = fib_mem_arg (n-2) + fib_mem_arg (n-1)
