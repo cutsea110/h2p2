@@ -16,6 +16,7 @@ main :: IO ()
 main = print $ go (False,False,False) [1..1000000]
 --}
 
+{--
 data BitStruct = BitStruct !Bool !Bool !Bool deriving Show
 
 go :: BitStruct -> [Int] -> BitStruct
@@ -26,5 +27,19 @@ test n x = x `mod` n == 0
 
 main :: IO ()
 main = print $ go (BitStruct False False False) [1..1000000]
+--}
 
--- type BitArray = UArray Int Bool
+type BitArray = UArray Int Bool
+
+go :: BitArray -> [Int] -> BitArray
+go arr [] = arr
+go arr (x:xs) = let arr' = (listArray (0,2) [ test 2 x `xor` (arr!0)
+                                            , test 3 x `xor` (arr!1)
+                                            , test 5 x `xor` (arr!2)
+                                            ])
+                in arr' `seq` go arr' xs
+
+test n x = x `mod` n == 0
+
+main :: IO ()
+main = undefined -- print $ go (BitStruct False False False) [1..1000000]
