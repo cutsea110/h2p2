@@ -9,14 +9,14 @@
   Gen  1         2 colls,     0 par    0.000s   0.000s     0.0001s    0.0001s
 
   INIT    time    0.000s  (  0.000s elapsed)
-  MUT     time    0.171s  (  0.171s elapsed)
+  MUT     time    0.174s  (  0.175s elapsed)
   GC      time    0.004s  (  0.004s elapsed)
   EXIT    time    0.000s  (  0.000s elapsed)
-  Total   time    0.175s  (  0.175s elapsed)
+  Total   time    0.179s  (  0.179s elapsed)
 
   %GC     time       2.3%  (2.2% elapsed)
 
-  Alloc rate    12,565,659,988 bytes per MUT second
+  Alloc rate    12,315,577,630 bytes per MUT second
 
-  Productivity  97.6% of total user, 97.7% of total elapsed
+  Productivity  97.5% of total user, 97.6% of total elapsed
 
