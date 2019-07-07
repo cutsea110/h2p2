@@ -4,7 +4,7 @@ import Data.Sequence as Seq
 import Data.Foldable (toList)
 import Data.List (foldl')
 
-data Circular a = Circular !Int (Seq.Seq a)
+data Circular a = Circular !Int !(Seq.Seq a)
 
 create :: Int -> Circular a
 create n = Circular n Seq.empty
