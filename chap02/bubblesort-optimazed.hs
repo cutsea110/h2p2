@@ -1,3 +1,4 @@
+{-# LANGUAGE OverloadedLists #-}
 module Main where
 
 import Control.Monad.Primitive
