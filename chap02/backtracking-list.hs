@@ -8,3 +8,5 @@ special_pythagorean n = do
   guard (a + b + c == n)
   guard (a ^ 2 + b ^ 2 == c ^ 2)
   return (a, b, c)
+
+main = print $ head $ special_pythagorean 1000
