@@ -16,4 +16,5 @@ count_pure n = go n 0
     go 0 s = s
     go i s = go (i - 1) $! (s + i)
 
-main = print "Hello"
+-- main = print $ count_pure 10000000
+main = print $ count_st 10000000
