@@ -37,4 +37,5 @@ interpret (Free program) = case program of
   Read go           -> getLine >>= interpret . go
   Missiles m next   -> m >> interpret next
 
+main :: IO Int
 main = interpret program
