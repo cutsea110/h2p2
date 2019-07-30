@@ -41,3 +41,8 @@ fib_mem_arg = \i -> map (\n -> if n <= 1 then 1 else fib_mem_arg (n-2) + fib_mem
 
 main :: IO ()
 main = print $ fib_mem' 1000
+
+fib_tab :: Int -> Integer
+fib_tab n = fst $ foldr f (1, 1) [1..n]
+  where
+    f _ (x, y) = (y, x+y)
