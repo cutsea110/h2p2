@@ -1,6 +1,6 @@
 module Main where
 
-f = head
+f x = head x
 g = f . tail
 h = g . tail
 
