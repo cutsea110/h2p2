@@ -1,0 +1,40 @@
+	Thu Aug  8 08:22 2019 Time and Allocation Profiling Report  (Final)
+
+	   crash +RTS -p -xc -RTS
+
+	total time  =        0.00 secs   (0 ticks @ 1000 us, 1 processor)
+	total alloc =      59,424 bytes  (excludes profiling overheads)
+
+COST CENTRE MODULE           SRC                     %time %alloc
+
+MAIN        MAIN             <built-in>                0.0    1.1
+CAF         GHC.List         <entire-module>           0.0   12.6
+CAF         GHC.IO.Handle.FD <entire-module>           0.0   58.4
+CAF         GHC.IO.Exception <entire-module>           0.0    3.2
+CAF         GHC.IO.Encoding  <entire-module>           0.0    5.5
+CAF         GHC.Exception    <entire-module>           0.0    1.1
+CAF         GHC.Conc.Sync    <entire-module>           0.0    1.5
+CAF         GHC.Conc.Signal  <entire-module>           0.0    1.1
+main        Main             chap03/crash.hs:7:1-22    0.0   14.8
+
+
+                                                                             individual      inherited
+COST CENTRE  MODULE                SRC                    no.     entries  %time %alloc   %time %alloc
+
+MAIN         MAIN                  <built-in>             115          0    0.0    1.1     0.0  100.0
+ CAF         Main                  <entire-module>        229          0    0.0    0.1     0.0    0.8
+  g          Main                  chap03/crash.hs:4:1-12 234          1    0.0    0.1     0.0    0.1
+  h          Main                  chap03/crash.hs:5:1-12 232          1    0.0    0.1     0.0    0.1
+  main       Main                  chap03/crash.hs:7:1-22 230          1    0.0    0.4     0.0    0.6
+   h         Main                  chap03/crash.hs:5:1-12 233          0    0.0    0.1     0.0    0.2
+    g        Main                  chap03/crash.hs:4:1-12 235          0    0.0    0.1     0.0    0.1
+     f       Main                  chap03/crash.hs:3:1-12 236          1    0.0    0.0     0.0    0.0
+ CAF         GHC.Conc.Signal       <entire-module>        224          0    0.0    1.1     0.0    1.1
+ CAF         GHC.Conc.Sync         <entire-module>        223          0    0.0    1.5     0.0    1.5
+ CAF         GHC.Exception         <entire-module>        221          0    0.0    1.1     0.0    1.1
+ CAF         GHC.IO.Encoding       <entire-module>        215          0    0.0    5.5     0.0    5.5
+ CAF         GHC.IO.Encoding.Iconv <entire-module>        213          0    0.0    0.3     0.0    0.3
+ CAF         GHC.IO.Exception      <entire-module>        207          0    0.0    3.2     0.0    3.2
+ CAF         GHC.IO.Handle.FD      <entire-module>        205          0    0.0   58.4     0.0   58.4
+ CAF         GHC.List              <entire-module>        200          0    0.0   12.6     0.0   12.6
+ main        Main                  chap03/crash.hs:7:1-22 231          0    0.0   14.4     0.0   14.4
