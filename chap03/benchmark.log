@@ -1,0 +1,27 @@
+benchmarking sum/sum
+time                 164.4 ms   (144.2 ms .. 181.8 ms)
+                     0.985 R²   (0.962 R² .. 1.000 R²)
+mean                 159.3 ms   (154.4 ms .. 164.4 ms)
+std dev              7.521 ms   (4.235 ms .. 11.08 ms)
+variance introduced by outliers: 12% (moderately inflated)
+
+benchmarking sum/foldr
+time                 122.9 ms   (106.3 ms .. 143.5 ms)
+                     0.974 R²   (0.913 R² .. 0.999 R²)
+mean                 115.8 ms   (96.18 ms .. 124.8 ms)
+std dev              19.39 ms   (6.707 ms .. 31.49 ms)
+variance introduced by outliers: 48% (moderately inflated)
+
+benchmarking sum/foldl
+time                 203.5 ms   (148.0 ms .. 245.6 ms)
+                     0.968 R²   (0.902 R² .. 1.000 R²)
+mean                 204.3 ms   (172.9 ms .. 224.7 ms)
+std dev              33.05 ms   (16.80 ms .. 50.34 ms)
+variance introduced by outliers: 48% (moderately inflated)
+
+benchmarking sum/foldl'
+time                 25.34 ms   (24.10 ms .. 26.31 ms)
+                     0.993 R²   (0.983 R² .. 0.998 R²)
+mean                 28.62 ms   (27.54 ms .. 30.11 ms)
+std dev              2.826 ms   (1.935 ms .. 3.856 ms)
+variance introduced by outliers: 43% (moderately inflated)
