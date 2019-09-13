@@ -1,0 +1,53 @@
+benchmarking sum/sum
+time                 163.4 ms   (151.5 ms .. 173.9 ms)
+                     0.995 R²   (0.986 R² .. 1.000 R²)
+mean                 160.1 ms   (157.7 ms .. 163.6 ms)
+std dev              4.201 ms   (1.873 ms .. 6.866 ms)
+variance introduced by outliers: 12% (moderately inflated)
+
+benchmarking sum/foldr
+time                 112.9 ms   (98.07 ms .. 120.4 ms)
+                     0.985 R²   (0.956 R² .. 0.998 R²)
+mean                 107.8 ms   (91.88 ms .. 116.4 ms)
+std dev              17.48 ms   (5.890 ms .. 28.10 ms)
+variance introduced by outliers: 48% (moderately inflated)
+
+benchmarking sum/foldl
+time                 152.2 ms   (130.3 ms .. 162.5 ms)
+                     0.985 R²   (0.946 R² .. 0.999 R²)
+mean                 142.1 ms   (119.4 ms .. 152.8 ms)
+std dev              21.84 ms   (7.081 ms .. 35.68 ms)
+variance introduced by outliers: 41% (moderately inflated)
+
+benchmarking sum/foldl'
+time                 10.23 ms   (10.16 ms .. 10.30 ms)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 10.22 ms   (10.17 ms .. 10.28 ms)
+std dev              133.3 μs   (101.6 μs .. 166.4 μs)
+
+benchmarking foldl/_
+time                 185.5 ms   (170.1 ms .. 193.4 ms)
+                     0.996 R²   (0.990 R² .. 1.000 R²)
+mean                 167.5 ms   (142.3 ms .. 177.4 ms)
+std dev              22.22 ms   (4.789 ms .. 33.84 ms)
+variance introduced by outliers: 41% (moderately inflated)
+
+benchmarking foldl/()
+time                 188.2 ms   (172.8 ms .. 198.6 ms)
+                     0.996 R²   (0.988 R² .. 1.000 R²)
+mean                 164.8 ms   (138.6 ms .. 175.2 ms)
+std dev              22.93 ms   (5.656 ms .. 34.40 ms)
+variance introduced by outliers: 41% (moderately inflated)
+
+benchmarking foldl/num
+time                 192.7 ms   (155.6 ms .. 213.8 ms)
+                     0.986 R²   (0.965 R² .. 1.000 R²)
+mean                 171.6 ms   (136.2 ms .. 185.3 ms)
+std dev              28.95 ms   (9.301 ms .. 42.38 ms)
+variance introduced by outliers: 48% (moderately inflated)
+
+benchmarking foldl/num (strict)
+time                 23.02 ms   (22.81 ms .. 23.25 ms)
+                     1.000 R²   (0.999 R² .. 1.000 R²)
+mean                 23.13 ms   (22.98 ms .. 23.40 ms)
+std dev              456.5 μs   (197.1 μs .. 685.0 μs)
